@@ -6,13 +6,19 @@
 #333633
 #2E2E2E
 #000000 */
-
+@font-face {
+  font-family: 'Raleway';
+  src:
+   /* url('myfont.woff') format('woff'), Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('fonts/Raleway-VariableFont_wght.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+} 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  color: #333633;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
 }
@@ -20,4 +26,35 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+body{
+  background-color: #E8EFE8;
+}
+
+.content-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.content-header h1{
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+}
+.menu-header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu-header li{
+  padding: 0 1rem;
+  font-size: .8rem;
+  letter-spacing: 2.5px;
+}
+.menu-header li a:hover{
+  font-weight: 600;
+}
+.gear{
+  width: 30px;
 }
