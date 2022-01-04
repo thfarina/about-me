@@ -38,6 +38,7 @@ img{
   box-shadow: 5px 5px #333633;
   cursor: pointer;
   transition: .3s;
+  font-weight: 700;
 }
 .botao:hover{
   border: #6D726D solid 3px;
@@ -57,7 +58,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   letter-spacing: 2.5px;
 }
 .menu-header{
@@ -141,14 +142,28 @@ body{
   font-weight: 400;
 }
 
+.hardskill-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.titulo-skill{
+  padding: .5rem 0;
+}
+.hardskill{
+  margin: .5rem;
+}
 .barra{
   width: 200px;
   height: 5px;
-  background-color: #6D726D;
+  background-color: #C4C4C4;
 }
-.barra::before{
-  width: 30%;
-  background-color: #fff;
+.progresso{
+  height: 5px;
+  background-color: #333633;
+}
+.softskill-content{
+  margin: 1rem 0;
 }
 
 footer p{
