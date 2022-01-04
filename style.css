@@ -90,3 +90,10 @@ body{
 .foto-thalita{
   width: 50%;
 }
+
+footer p{
+  padding: 1rem;
+  font-size: .8rem;
+  text-transform: none;
+  text-align: center;
+}
