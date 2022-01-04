@@ -46,7 +46,7 @@ img{
 }
 .botoes{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 body{
@@ -87,7 +87,6 @@ body{
 .home-left{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-between;
 }
 .home-left h2{
