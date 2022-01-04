@@ -25,6 +25,9 @@ h1, h2, h3{
   font-weight: 300;
   font-size: 1rem;
 }
+img{
+  max-width: 100%;
+}
 .bold{
   font-weight: 700;
 }
@@ -32,12 +35,14 @@ h1, h2, h3{
   padding: 1rem 2rem;
   margin: 1rem;
   border: #333633 solid 3px;
+  box-shadow: 5px 5px #333633;
   cursor: pointer;
+  transition: .3s;
 }
 .botao:hover{
   border: #6D726D solid 3px;
   color: #6D726D;
-  transition: .3s;
+  box-shadow: 3px 3px #6D726D;
 }
 
 body{
@@ -73,6 +78,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
 }
 .home-left{
   display: flex;
@@ -87,8 +93,12 @@ body{
   text-transform: none;
   padding: 2rem 0;
 }
-.foto-thalita{
+.home-right{
   width: 50%;
+}
+.foto-thalita{
+  border: 10px solid #333633;
+  box-shadow: 10px 10px #333633;
 }
 
 footer p{
