@@ -44,6 +44,10 @@ img{
   color: #6D726D;
   box-shadow: 3px 3px #6D726D;
 }
+.botoes{
+  display: flex;
+  justify-content: space-between;
+}
 
 body{
   background-color: #E8EFE8;
@@ -92,13 +96,20 @@ body{
 .home-left p, .home-left p span{
   text-transform: none;
   padding: 2rem 0;
+  font-size: 1.5rem;
 }
 .home-right{
-  width: 50%;
+  width: 50vw;
 }
 .foto-thalita{
+  background-image: url("imgs/thalitafarina.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
   border: 10px solid #333633;
   box-shadow: 10px 10px #333633;
+  margin: 2rem;
 }
 
 footer p{
