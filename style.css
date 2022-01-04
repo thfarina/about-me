@@ -166,6 +166,33 @@ body{
   margin: 1rem 0;
 }
 
+.portfolio-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.port{
+  margin: 1rem;
+}
+.port-body{
+  width: 200px;
+  height: 140px;
+  border: 5px solid #333633;
+  box-shadow: 10px 10px #333633;
+  position: relative;
+}
+.port-navbar{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #333633;
+  border: none;
+  width: 195px;
+  height: 5px;
+}
+.port-image{
+  
+}
+
 footer p{
   padding: 1rem;
   font-size: .8rem;
