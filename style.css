@@ -83,12 +83,15 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* flex-wrap: wrap; */
   padding: 2rem 0;
 }
 .home-left{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 2rem;
+  /* width: 48vw; */
 }
 .home-left h2{
   font-size: 2rem;
@@ -99,7 +102,7 @@ body{
   font-size: 1.5rem;
 }
 .home-right{
-  width: 50vw;
+  /* width: 48vw; */
 }
 .foto-thalita{
   background-image: url("imgs/thalitafarina.jpg");
@@ -119,7 +122,7 @@ body{
 .curriculo-left, .curriculo-right{
   width: 50vw;
 }
-.titulo-curriculo{
+.titulo-curriculo, #portfolio{
   font-size: 2.5rem;
   font-weight: 900;
 }
@@ -167,7 +170,11 @@ body{
 }
 
 .portfolio-content{
+  margin: 4rem 0;
+}
+.portfolio-gallery{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .port{
@@ -176,9 +183,13 @@ body{
 .port-item{
   width: 300px;
   margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .port-body{
-  width: 310px;
+  width: 309px;
   height: 244px;
   border: 5px solid #333633;
   box-shadow: 10px 10px #333633;
@@ -191,6 +202,7 @@ body{
   height: 30px;
   display: flex;
   align-items: center;
+  padding-left: 1rem;
 }
 .botoes-navbar img{
   width: 10px;
@@ -199,17 +211,21 @@ body{
 .port-navbar{
   position: absolute;
   top: 30px;
-  left: 0;
+  left: 0px;
   background-color: #333633;
   border: none;
-  width: 305px;
+  width: 303px;
   height: 5px;
 }
 .port-image{
   position: absolute;
   bottom: 0px;
+  left: 0px;
   width: 300px;
   height: 200px;
+}
+.port-image a img:hover{
+  background-color: #ffffff;
 }
 .nome-projeto{
   align-self: center;
