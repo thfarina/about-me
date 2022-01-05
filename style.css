@@ -115,37 +115,37 @@ body{
   margin: 2rem;
 }
 
-.formacao-content{
+.left-content{
   padding: 4rem 0;
   display: flex;
+}
+.formacao-content, .experiencia-content, .hardskill-content, .softskill-content{
+  margin-bottom: 2rem;
 }
 .curriculo-left, .curriculo-right{
   width: 50vw;
 }
 .titulo-curriculo, #portfolio{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
 }
-.formacao{
-  /* list-style: initial; */
-}
-.formacao li{
+.formacao li, .experiencia li{
   padding: 1rem 0;
 }
-.titulo-formacao{
+.titulo-formacao, .titulo-experiencia{
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .periodo{
   font-weight: 900;
   color: #555555;
   font-size: .8rem;
 }
-.naosei{
+.local{
   font-weight: 400;
 }
 
-.hardskill-content{
+.hardskill-gallery{
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 0;
@@ -165,12 +165,13 @@ body{
   height: 5px;
   background-color: #333633;
 }
-.softskill-content{
+.softskill-text{
   margin: 1rem 0;
+  line-height: 1.5;
 }
 
 .portfolio-content{
-  margin: 4rem 0;
+  margin: 8rem 0;
 }
 .portfolio-gallery{
   display: flex;
@@ -204,9 +205,8 @@ body{
   align-items: center;
   padding-left: 1rem;
 }
-.botoes-navbar img{
-  width: 10px;
-  margin: 0 .2rem;
+.botoes-navbar p{
+  font-size: 3rem;
 }
 .port-navbar{
   position: absolute;
