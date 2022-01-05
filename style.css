@@ -190,7 +190,10 @@ body{
   height: 5px;
 }
 .port-image{
-  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
 }
 
 footer p{
