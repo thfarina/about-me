@@ -172,8 +172,11 @@ body{
 }
 .home-left p, .home-left p span{
   text-transform: none;
-  padding: 2rem 0;
+  margin: 2rem 0;
   font-size: 1.5rem;
+}
+.home-left p span{
+  background-color: #C4C4C4;
 }
 .foto-thalita{
   margin: 2rem;
@@ -255,10 +258,10 @@ body{
   margin: 1rem;
 }
 .port-item{
-  width: 300px;
+  width: 309px;
   margin: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -268,8 +271,6 @@ body{
   border: 5px solid #333633;
   box-shadow: 10px 10px #333633;
   position: relative;
-  /* display: flex;
-  align-items: flex-start; */
 }
 .botoes-navbar{
   width: 100%;
@@ -297,14 +298,19 @@ body{
   width: 300px;
   height: 200px;
 }
-.port-image a img:hover{
-  background-color: #ffffff;
-}
 .nome-projeto{
   align-self: center;
 }
 
+@media (max-width: 1200px){
+  .home-left, .home-right, .formacao-content, .experiencia-content, .hardskill-content, .softskill-content, .portfolio-content{
+    margin: 1rem 5%;
+  }
+}
 @media (max-width: 768px){
+  h1{
+    margin: 0;
+  }
   .content-home{
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -312,17 +318,98 @@ body{
   .home-left p, .home-left p span{
     font-size: 1rem;
   }
-  .curriculo-content{
+  .home-left, .home-right, .formacao-content, .experiencia-content, .hardskill-content, .softskill-content, .portfolio-content{
+    padding: 0;
+    text-align: center;
+    max-width: initial;
+  }
+  .home-right{
+    margin-bottom: 0;
+  }
+  .curriculo-content, .hardskill-gallery, .portfolio-gallery, .hardskill, .botoes{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-@media (max-width: 420px){
-  .botoes{
+@media (max-width: 550px){
+  .titulo-curriculo, #portfolio{
+    font-size: 1.5rem;
+  }
+  .barra{
+    width: 150px;
+  }
+}
+@media (max-width: 400px){
+  .home-text, .home-left h2{
+    font-size: 1.5rem;
+  }
+  .titulo-curriculo, #portfolio{
+    font-size: 1.2rem;
+  }
+  .titulo-formacao, .titulo-experiencia{
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .portfolio-gallery{
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+  }
+  .port{
+    /* margin: 1rem; */
+  }
+  .port-item{
+    width: 159px;
+    /* width: 309px;
+    margin: 2rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; */
+  }
+  .port-body{
+    width: 159px;
+    height: 129px;
+    /* width: 309px;
+    height: 244px;
+    border: 5px solid #333633;
+    box-shadow: 10px 10px #333633;
+    position: relative; */
+  }
+  .botoes-navbar{
+    height: 15px;
+    padding-left: .5rem;
+    /* width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem; */
+  }
+  .botoes-navbar p{
+    font-size: 2rem;
+    /* font-size: 3rem; */
+  }
+  .port-navbar{
+    top: 15px;
+    width: 153px;
+    /* position: absolute;
+    top: 30px;
+    left: 0px;
+    background-color: #333633;
+    border: none;
+    width: 303px;
+    height: 5px; */
+  }
+  .port-image{
+    width: 150px;
+    height: 100px;
+    /* position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    height: 200px; */
   }
 }
 
