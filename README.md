@@ -1,7 +1,7 @@
 ### Portflow project
 <br>
 <h5>🗒️ DESCRIPTION</h5>
-<p>A responsive landing page for educational purpose.</p>
+<p>My personal webpage with my portfolio, my academic history and working experience.</p>
 <br>
 <h5>🕐 PROJECT STATUS</h5>
 <!-- ☑️ -->
