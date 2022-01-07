@@ -55,7 +55,11 @@ img{
   display: flex;
   justify-content: space-evenly;
 }
-
+header{ 
+  background-color: #E8EFE8;
+  position: sticky;
+  top: 0;
+}
 body{
   background-color: #E8EFE8;
 }
@@ -106,6 +110,8 @@ body{
   font-size: 1.5rem;
 }
 .home-left p span{
+  border-radius: 50px;
+  padding: 3px 5px;
   background-color: #C4C4C4;
 }
 .foto-thalita{
@@ -289,18 +295,19 @@ footer p{
       flex-direction: column;
 
       position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 30%;
+      left: -100%;
+      top: 40px;
+      width: 100%;
+      padding: .5rem;
 
       background-color: #333633;
       transition: .3s;
   }
   #check:checked ~ nav .menu-header{
-      transform: translateY(100%);
+      transform: translateX(100%);
   }
   .menu-header li a{
-      padding: 1rem;
+      line-height: 2;
       color: #E8EFE8;
       display: block;
   }
