@@ -45,6 +45,7 @@ img{
   cursor: pointer;
   transition: .3s;
   font-weight: 700;
+  flex: 1;
 }
 .botao:hover{
   border: #6D726D solid 3px;
@@ -110,7 +111,6 @@ body{
   font-size: 1.5rem;
 }
 .home-left p span{
-  border-radius: 50px;
   padding: 3px 5px;
   background-color: #C4C4C4;
 }
