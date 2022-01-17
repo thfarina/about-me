@@ -28,7 +28,7 @@ h1, h2, h3{
   font-weight: 300;
   font-size: 1rem;
 }
-h1{
+h1 a{
   margin-left: 1rem;
 }
 img{
@@ -60,6 +60,7 @@ header{
   background-color: #E8EFE8;
   position: sticky;
   top: 0;
+  z-index: 9;
 }
 body{
   background-color: #E8EFE8;
@@ -74,8 +75,6 @@ body{
 }
 .menu-header{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 .menu-header li a{
   padding: 0 1rem;
@@ -90,17 +89,16 @@ body{
 }
 
 .content-home{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 2rem;
   padding: 2rem 0;
 }
 .home-left{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2rem;
-  max-width: 50%;
 }
 .home-left h2, .home-text{
   font-size: 2rem;
@@ -114,8 +112,9 @@ body{
   padding: 3px 5px;
   background-color: #C4C4C4;
 }
-.foto-thalita{
-  margin: 2rem;
+.home-right{
+  display: flex;
+  justify-content: center;
 }
 .foto-thalita img{
   display: block;
@@ -127,19 +126,17 @@ body{
 }
 
 .curriculo-content{
-  /* margin: 2rem; */
-  /* padding: 4rem 0; */
-  display: flex;
-}
-.formacao-content, .experiencia-content, .hardskill-content, .softskill-content{
-  margin-bottom: 2rem;
-}
-.curriculo-left, .curriculo-right{
-  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 .titulo-curriculo, #portfolio{
   font-size: 2rem;
   font-weight: 900;
+}
+.experiencia-content{
+  grid-row: 2;
 }
 .formacao li, .experiencia li{
   padding: 1rem 0;
@@ -158,9 +155,8 @@ body{
 }
 
 .hardskill-gallery{
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: 1rem 0; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .titulo-skill{
   padding: .5rem 0;
@@ -183,19 +179,21 @@ body{
 }
 
 .portfolio-content{
-  margin: 2rem 0;
+  padding: 2rem 0;
+}
+#portfolio{
+  padding: 1rem;
 }
 .portfolio-gallery{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 .port{
   margin: 1rem;
 }
 .port-item{
   width: 309px;
-  margin: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,6 +234,9 @@ body{
 }
 .nome-projeto{
   align-self: center;
+}
+.portfolio-content .botoes{
+  padding: 2rem 0;
 }
 footer p{
   padding: 1rem;
@@ -318,6 +319,7 @@ footer p{
     margin: 0;
   }
   .content-home{
+    display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
