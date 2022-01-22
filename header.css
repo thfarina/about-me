@@ -1,0 +1,26 @@
+header{ 
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.content-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  letter-spacing: 2.5px;
+}
+.menu-header{
+  display: flex;
+}
+.menu-header li a{
+  padding: 0 1rem;
+  font-size: .8rem;
+  letter-spacing: 2.5px;
+}
+.menu-header li a:hover{
+  font-weight: 600;
+}
+.back-menu-icon{
+  display: none;
+}
